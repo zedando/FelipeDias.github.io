@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>FelipePercegona</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="CSS/CSS_Curriculo.css" rel="stylesheet"/>
+</head>	
+<body>
+	<div id="sidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">×</a>
+		<a href="#inicio">Início</a>
+		<a href="#exp">Experiências</a>
+		<a href="#comp">Conhecimentos</a>
+		<a href="#edu">Formação</a>
+		<a href="#skills">Contato</a>
+	</div>
+	
+	<button class="openbtn" onclick="toggleMenu()">☰ Menu</button>
+
+	<div class="profile-photo">
+		<img src="perfil.jpg.jpeg" alt="Foto de perfil de Felipe Percegona" width="400" height="400">
+	</div>
+	
+    <h1><strong>Felipe Dias Percegona</strong></h1>
+
+    <header>
+        <p>
+            Cel: (41) 99568-3666<br>
+            <strong>E-mail:</strong> percegonafelipe@gmail.com<br>
+            <a href="https://www.linkedin.com/in/felipepercegona-2348b1268/?originalSubdomain=br" target="_blank">Linkedin</a>
+        </p>
+    </header>
+
+    <div class="container">
+
+        <button class="toggle-btn" onclick="toggleSection('exp1')">🧠 Experiências </button>
+		<div id="exp1" class="content-box">
+			<p>	 • Tenho ampla experiência em relações trabalhistas, atuando como técnico em TI, microempreendedor online, além de lidar com contratações PJ tanto com empresas quanto com clientes empreendedores,<br> 
+				essa trajetória me proporcionou uma sólida base para lidar com essas relações com profissionalismo, focando na resolução de problemas, aprendizado contínuo e a execução de novas tarefas.<br> 
+				O mais importante, porém, é a compreensão da relevância das minhas responsabilidades, sempre mantendo um compromisso com a qualidade e a eficiência no trabalho.<br>
+			</p>
+		</div>
+
+        <button class="toggle-btn" onclick="toggleSection('exp')">🧠 Experiências Profissionais</button>
+        <div id="exp" class="content-box">
+            <p>• Ex-técnico em TI na Secretaria da Ciência , Tecnologia e Ensino Superior;<br>
+				Fev/2023 - Ago/2023;<br>
+                • Foco em resolução de problemas, aprendizado e responsabilidade.</p>
+            <p>• Gestor de Tráfego Pago - Agência Imperador;<br>
+				Out/2023 - Em andamento;</p>
+			<p>• Gestor de Tráfego Pago e Social Media - Empresa Própria<br>
+				Jan/2024 - Em andamento;</p>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleSection('comp')">💻 Conhecimentos em Computação</button>
+        <div id="comp" class="content-box">
+           <p> • Conhecimento Intermediário em algoritmo e linguagem de programação C++ e C#;</p>
+		   <p>• Conhecimento sobre Marketing Digital e Criação e divulgação de Redes Sociais.</p>
+			<p>• Amplo conhecimento da área tecnológica, programação e TI.</p>                                                                               
+			<p>• Estudo e prática de Narrativa, Modelagem e Ilustração 2D e 3D;</p>
+			<p>• Conhecimento básico e uso de ferramentas de modelagem e ilustração: Blender;</p>
+			<p>• Conhecimento intermediário em GTM - Google Tag Manager.</p>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleSection('edu')">🎓 Formação</button>
+        <div id="edu" class="content-box">
+            <p>	• Técnico Integrado ao Ensino Médio em Programação de Jogos Digitais<br>
+				Instituto Federal do Paraná 
+				Fev/2022 - Em andamento </p>
+		   <p>• Ensino fundamental completo <br> 
+			   Escola Preparatória Genius 
+		   </p>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleSection('comm')">🗣️ Comunicação</button>
+        <div id="comm" class="content-box">
+            <p>	• Possuo uma comunicação assertiva, aliada a estratégias eficazes de persuasão e carisma, que me permitem engajar e influenciar de maneira positiva e impactante. <br>
+				• Curso de Comunicação e Vendas - Pedro Sobral	
+			</p>
+        </div>
+
+        <button class="toggle-btn" onclick="toggleSection('skills')">⭐ Soft Skills & Complementares</button>
+        <div id="skills" class="content-box">
+            <p>• Lingua Estrangeira: Inglês básico<br>• Proatividade, criatividade, trabalho em equipe</p>
+        </div>
+    </div>
+
+    
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide" onclick="openWindow(0)"><img src="projeto2.png" alt="Imagem 1"></div>
+            <div class="carousel-slide" onclick="openWindow(1)"><img src="img4.jpg" alt="Imagem 2"></div>
+            <div class="carousel-slide" onclick="openWindow(2)"><img src="modelo-01.png" alt="Imagem 3"></div>
+            
+            
+            <div class="carousel-slide">
+                <a href="index.html" target="_blank">
+                    <img src="bee1.png" alt="Jogo Bee Collect">
+                </a>
+            </div>
+        </div>
+
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <footer>
+        &copy; 2025 - Felipe Dias Percegona
+    </footer>
+
+<script src="JS/carousel_script.js"></script>
+</body>
+</html>
